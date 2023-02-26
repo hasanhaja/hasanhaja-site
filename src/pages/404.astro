@@ -1,0 +1,23 @@
+---
+import Content from "../components/Content.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="404 Page not found">
+  <Content>
+    <p>
+      <span class="font-bold">404 not found:{" "}</span>
+      {Astro.url.pathname ?? "test"}
+    </p>
+  </Content>
+  <div class="mb-2 text-center">
+    <img
+      src="/404_temp.png"
+      class="rounded-md mx-auto w-9/12"
+      alt="Website under construction image with crane next a laptop with orange cones."
+    />
+    <p class="text-xl">
+      Sorry, I'm still slowly building all of these pages! 🏗
+    </p>
+  </div>
+</BaseLayout>
