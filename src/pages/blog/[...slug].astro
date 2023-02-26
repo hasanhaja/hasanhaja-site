@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const pages = [
+  {
+    slug: "post-1",
+    title: "Astro products",
+    text: "We have lots of products for you",
+  },
+  {
+    slug: "post-2",
+    title: "The ultimate Astro handbook",
+    text: "If you want to learn Astro, you must read this book.",
+  }
+];
+
+const { slug } = Astro.params;
+const page = pages.find((page) => page.slug === slug);
+if (!page) return Astro.redirect("/404");
+const { title, text } = page;
+---
+<BaseLayout title={title}>
+  <h1>{title}</h1>
+  <p>{text}</p>
+</BaseLayout>
