@@ -1,5 +1,5 @@
 ---
-import NavBar from "../components/NavBar";
+import NavBar from "../components/NavBar.astro";
 const { title } = Astro.props;
 const year = new Date().getFullYear();
 ---
@@ -38,7 +38,7 @@ const year = new Date().getFullYear();
               <a rel="prefetch" href="/">@hasanhaja</a>
             </h1>
           </div>
-          <NavBar client:load />
+          <NavBar />
         </div>
       </header>
       <main>

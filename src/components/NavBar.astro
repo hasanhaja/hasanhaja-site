@@ -1,0 +1,10 @@
+---
+import NavLink from "./NavLink.astro";
+import NavController from "./NavController";
+---
+<NavController client:load>
+  <NavLink href="/">Home</NavLink>
+  <NavLink href="/blog">Blog</NavLink>
+  <NavLink href="/picks">Picks</NavLink>
+  <NavLink href="/gadgets">Gadgets</NavLink>
+</NavController>
