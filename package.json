@@ -6,11 +6,12 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro build",
-    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
+		"preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
 		"astro": "astro"
 	},
 	"dependencies": {
 		"@astrojs/deno": "^4.0.2",
+		"@astrojs/prefetch": "^0.1.2",
 		"@astrojs/solid-js": "^2.0.2",
 		"@astrojs/tailwind": "^3.0.1",
 		"astro": "^2.0.4",

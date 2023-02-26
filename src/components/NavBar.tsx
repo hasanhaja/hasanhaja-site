@@ -3,6 +3,7 @@ import { createSignal, ParentComponent } from "solid-js";
 const NavLink: ParentComponent<{href: string}> = (props) => (
   <li class="flex justify-end">
     <a
+      rel="prefetch"
       class="text-2xl hover:underline md:text-3xl p-1 pr-4"
       href={props.href}
     >

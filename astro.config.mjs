@@ -10,8 +10,11 @@ import solidJs from "@astrojs/solid-js";
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
+import prefetch from "@astrojs/prefetch";
+
+// https://astro.build/config
 export default defineConfig({
   output: "server",
   adapter: deno(),
-  integrations: [solidJs(), tailwind()]
+  integrations: [solidJs(), tailwind(), prefetch()]
 });
