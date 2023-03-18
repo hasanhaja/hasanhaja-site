@@ -2,18 +2,14 @@
 import Hero from "../components/Hero.astro";
 import PageContainer from "../components/PageContainer.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const sectionHeadingStyles = "text-4xl md:text-5xl font-bold pb-4";
-const sectionSpacingStyles = "py-6 mb-2";
-const paragraphStyles = "pb-3";
 ---
 
 <BaseLayout>
   <Hero />
-  <PageContainer>
-    <section class={sectionSpacingStyles}>
-      <h1 class={sectionHeadingStyles}>🤖 About me</h1>
-      <p class={paragraphStyles}>
+  <PageContainer class="bg-skin-section rounded-md my-4">
+    <section class="py-6 mb-2">
+      <h1 class="text-4xl md:text-5xl font-bold pb-4">🤖 About me</h1>
+      <p class="pb-3">
         I'm a Software Engineer @{" "}
         <a
           class="transition underline hover:text-[#e40085] font-bold hover:font-extrabold"
@@ -41,9 +37,9 @@ const paragraphStyles = "pb-3";
           🚀 Astro
         </a>.
       </p>
-      <div class="mt-2 bg-gray-200 rounded-md mb-2 max-w-lg mx-auto">
+      <div class="mt-2 bg-skin-inverted rounded-md mb-2 max-w-lg mx-auto">
         <div class="flex">
-          <div class="bg-gray-900 rounded-l-md">
+          <div class="bg-skin-secondary rounded-l-md">
             <p class="text-3xl font-bold text-gray-200 p-5 sm:p-7 sm:text-4xl">
               Social
             </p>

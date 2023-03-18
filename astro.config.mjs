@@ -16,5 +16,11 @@ import prefetch from "@astrojs/prefetch";
 export default defineConfig({
   output: "server",
   adapter: deno(),
-  integrations: [solidJs(), tailwind(), prefetch()]
+  integrations: [
+    solidJs(), 
+    tailwind({
+      config: { applyBaseStyles: false },
+    }), 
+    prefetch()
+  ]
 });
