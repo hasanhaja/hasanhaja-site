@@ -1,0 +1,19 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Helvetica Neue", Verdana, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@layer base {
+  :root {
+    --color-base: 34, 40, 49;
+    --color-inverted: 232, 232, 232;
+    --color-primary: 255, 136, 75;
+    --color-secondary: 48, 71, 94;
+    --color-section: 245, 230, 202;
+    --color-accent: 245, 71, 72;
+  }
+}
