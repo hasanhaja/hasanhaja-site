@@ -1,5 +1,6 @@
 ---
-import Content from "../components/Content.astro";
+import Hero from "../components/Hero.astro";
+import PageContainer from "../components/PageContainer.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const sectionHeadingStyles = "text-4xl md:text-5xl font-bold pb-4";
@@ -8,81 +9,72 @@ const paragraphStyles = "pb-3";
 ---
 
 <BaseLayout>
-	<Content>
-		<div class="md:flex md:gap-16 text-center">
-			<img
-				class="mx-auto md:mx-0 max-w-64 max-h-64 md:max-w-72 md:max-h-72 rounded-full"
-				src="/android-chrome-512x512.png"
-			/>
-			<h1 class="pt-4 md:p-8 text-4xl md:text-6xl font-bold md:my-auto">
-				Hi, I'm Hasan! 👋🏾
-			</h1>
-		</div>
-	</Content>
-
-	<section class={sectionSpacingStyles}>
-		<h1 class={sectionHeadingStyles}>🤖 About me</h1>
-		<p class={paragraphStyles}>
-			I'm a Software Engineer @{" "}
-			<a
-				class="transition underline hover:text-[#e40085] font-bold hover:font-extrabold"
-				href="https://www.cancerresearchuk.org/"
-			>
-				Cancer Research UK
-			</a>, building{" "}
-			<a
-				class="transition underline hover:text-[#0070f3] font-bold hover:font-extrabold"
-				href="https://nextjs.org/"
-			>
-				Next.js
-			</a>{" "}
-			apps. I love the web and I spend a lot of my time learning and playing with
-			web technologies. I'm currently playing with{" "}
-			<a
-				class="transition underline hover:text-[#ffdb1e] font-bold hover:font-extrabold"
-				href="https://fresh.deno.dev/"
-			>
-				🍋 Fresh
-			</a> and <a
-				class="transition underline hover:text-[#c026d3] font-bold hover:font-extrabold"
-				href="https://astro.build/"
-			>
-				🚀 Astro
-			</a>.
-		</p>
-		<div class="mt-2 bg-gray-200 rounded-md mb-2 max-w-lg mx-auto">
-			<div class="flex">
-				<div class="bg-gray-900 rounded-l-md">
-					<p class="text-3xl font-bold text-gray-200 p-5 sm:p-7 sm:text-4xl">
-						Social
-					</p>
-				</div>
-				<div
-					class="flex gap-2 justify-between px-[8%] sm:px-0 sm:gap-10 sm:justify-center items-center w-full"
-				>
-					<a href="https://twitter.com/hasanhaja">
-						<img
-							class="w-14 hover:mix-blend-multiply"
-							src="/twitter.png"
-							alt="Blue Twitter bird logo"
-						/>
-					</a>
-					<a href="https://www.linkedin.com/in/hasanhaja/">
-						<img
-							class="w-14 hover:mix-blend-multiply"
-							src="/linkedin.png"
-							alt="Blue LinkedIn logo"
-						/>
-					</a>
-					<a href="https://github.com/hasanhaja">
-						<img
-							class="w-14 hover:opacity-40"
-							src="/github.png"
-							alt="Black GitHub logo"
-						/>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+  <Hero />
+  <PageContainer>
+    <section class={sectionSpacingStyles}>
+      <h1 class={sectionHeadingStyles}>🤖 About me</h1>
+      <p class={paragraphStyles}>
+        I'm a Software Engineer @{" "}
+        <a
+          class="transition underline hover:text-[#e40085] font-bold hover:font-extrabold"
+          href="https://www.cancerresearchuk.org/"
+        >
+          Cancer Research UK
+        </a>, building{" "}
+        <a
+          class="transition underline hover:text-[#0070f3] font-bold hover:font-extrabold"
+          href="https://nextjs.org/"
+        >
+          Next.js
+        </a>{" "}
+        apps. I love the web and I spend a lot of my time learning and playing with
+        web technologies. I'm currently playing with{" "}
+        <a
+          class="transition underline hover:text-[#ffdb1e] font-bold hover:font-extrabold"
+          href="https://fresh.deno.dev/"
+        >
+          🍋 Fresh
+        </a> and <a
+          class="transition underline hover:text-[#c026d3] font-bold hover:font-extrabold"
+          href="https://astro.build/"
+        >
+          🚀 Astro
+        </a>.
+      </p>
+      <div class="mt-2 bg-gray-200 rounded-md mb-2 max-w-lg mx-auto">
+        <div class="flex">
+          <div class="bg-gray-900 rounded-l-md">
+            <p class="text-3xl font-bold text-gray-200 p-5 sm:p-7 sm:text-4xl">
+              Social
+            </p>
+          </div>
+          <div
+            class="flex gap-2 justify-between px-[8%] sm:px-0 sm:gap-10 sm:justify-center items-center w-full"
+          >
+            <a href="https://twitter.com/hasanhaja">
+              <img
+                class="w-14 hover:mix-blend-multiply"
+                src="/twitter.png"
+                alt="Blue Twitter bird logo"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/hasanhaja/">
+              <img
+                class="w-14 hover:mix-blend-multiply"
+                src="/linkedin.png"
+                alt="Blue LinkedIn logo"
+              />
+            </a>
+            <a href="https://github.com/hasanhaja">
+              <img
+                class="w-14 hover:opacity-40"
+                src="/github.png"
+                alt="Black GitHub logo"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </PageContainer>
 </BaseLayout>
