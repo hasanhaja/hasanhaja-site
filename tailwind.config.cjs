@@ -14,6 +14,8 @@ module.exports = {
       textColor: {
         skin: {
           base: withOpacity("--color-base"),
+          primary: withOpacity("--color-primary"),
+          secondary: withOpacity("--color-secondary"),
           inverted: withOpacity("--color-inverted"),
           accent: withOpacity("--color-accent"),
         },
@@ -30,7 +32,10 @@ module.exports = {
       fill: {
         skin: {
           base: withOpacity("--color-base"),
+          primary: withOpacity("--color-primary"),
+          secondary: withOpacity("--color-secondary"),
           inverted: withOpacity("--color-inverted"),
+          section: withOpacity("--color-section"),
           accent: withOpacity("--color-accent"),
         },
       },
