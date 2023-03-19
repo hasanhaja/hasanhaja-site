@@ -1,0 +1,21 @@
+---
+import SectionHeading from './SectionHeading.astro';
+
+type Props = {
+  contents: Array<string>;
+};
+
+const { contents } = Astro.props;
+---
+<aside class="mb-8 md:mb-10 px-4 py-5 md:px-6 md:py-8 bg-skin-primary shadow-lg shadow-skin-section rounded-lg">
+  <nav>
+    <section> 
+      <SectionHeading>Contents</SectionHeading>
+      <ol class="list-decimal list-inside text-skin-base font-medium text-lg md:leading-snug">
+        { contents.map((content, id) => (
+            <li class="hover:underline transition"><a href={`#section-${id}`}>{content}</a></li>
+        ))}
+      </ol>
+    </section>
+  </nav>
+</aside>

@@ -3,55 +3,64 @@ import PageContainer from "../components/PageContainer.astro";
 import PageHeading from "../components/PageHeading.astro";
 import Section from "../components/Section.astro";
 import SectionHeading from "../components/SectionHeading.astro";
+import ToC from "../components/ToC.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 ---
 <BaseLayout title="Picks"> 
   <PageContainer>
     <PageHeading>My top picks</PageHeading>
-    <Section> 
-      <SectionHeading>Frontend tools</SectionHeading>
-      <p>React will always have a special place in my heart because it was my gateway into the frontend world (and it&rsquo;s still paying the bills, lol). It rightfully brought me out of a world where I was building web applications in Java, and today I happily put up with all the chaos that is the modern frontend. These are my favorite technologies right now:</p>
-      <ul class="list-disc px-10">
-        <li>Solid</li>
-        <li>React</li>
-        <li>Tailwindcss</li>
-        <li>Plain ol&rsquo; HTML and CSS</li>
-      </ul>
-    </Section>
-    <Section> 
-      <SectionHeading>Fullstack, serverless & more</SectionHeading>
-      <p>I definitely got thrown in the deep end with these ideas and technologies, but it&rsquo;s really shaped my understand of fullstack web applications and serverless technologies. Even though I started with Next.js (straight from <code>create-react-app</code> without a clue in the world of what&rsquo;s even possible), it wasn&rsquo;t until Deno&rsquo;s Fresh and Astro that things really started clicking. This is pretty much the order in which I made that journey:</p> 
-      <ul class="list-disc px-10">
-        <li>Astro</li>
-        <li>Deno Deploy</li>
-        <li>SolidStart</li>
-        <li>Vercel</li>
-        <li>AWS CDK</li>
-        <li>Next.js</li>
-      </ul>
-    </Section>
-    <Section> 
-      <SectionHeading>Programming languages</SectionHeading>
-      <p>I&rsquo;m quite a programming language geek! I may not be great at many of them, but I absolutely adore them. These are my top favorites:</p> 
-      <ul class="list-disc px-10">
-        <li>TypeScript</li>
-        <li>Rust</li>
-        <li>Kotlin</li>
-        <li>Java</li>
-        <li>C++</li>
-      </ul>
-    </Section>
-    <Section> 
-      <SectionHeading>Podcasts & YouTube Channels</SectionHeading>
-      <p>I consume this content virtually every single day:</p> 
-      <ul class="list-disc px-10">
-        <li>JavaScript Jabber</li>
-        <li>Syntax FM</li>
-        <li>Ryan Carniato&rsquo;s streams and VODs</li>
-        <li>CoRecursive Podcast</li>
-        <li>Kevin Powell&rsquo;s YouTube channel</li>
-      </ul>
-    </Section>
+    <ToC contents={[
+      "Frontend tools",
+      "Fullstack, serverless & more",
+      "Programming languages",
+      "Podcasts & Youube Channels",
+    ]} />
+    <div class="divide-y divide-solid divide-skin-base">
+      <Section id="section-0"> 
+        <SectionHeading>Frontend tools</SectionHeading>
+        <p>React will always have a special place in my heart because it was my gateway into the frontend world (and it&rsquo;s still paying the bills, lol). It rightfully brought me out of a world where I was building web applications in Java, and today I happily put up with all the chaos that is the modern frontend. These are my favorite technologies right now:</p>
+        <ul class="list-disc list-inside px-4 marker:text-skin-accent">
+          <li>Solid</li>
+          <li>React</li>
+          <li>Tailwindcss</li>
+          <li>Plain ol&rsquo; HTML and CSS</li>
+        </ul>
+      </Section>
+      <Section id="section-1"> 
+        <SectionHeading>Fullstack, serverless & more</SectionHeading>
+        <p>I definitely got thrown in the deep end with these ideas and technologies, but it&rsquo;s really shaped my understand of fullstack web applications and serverless technologies. Even though I started with Next.js (straight from <code>create-react-app</code> without a clue in the world of what&rsquo;s even possible), it wasn&rsquo;t until Deno&rsquo;s Fresh and Astro that things really started clicking. This is pretty much the order in which I made that journey:</p> 
+        <ul class="list-disc list-inside px-4 marker:text-skin-accent">
+          <li>Astro</li>
+          <li>Deno Deploy</li>
+          <li>SolidStart</li>
+          <li>Vercel</li>
+          <li>AWS CDK</li>
+          <li>Next.js</li>
+        </ul>
+      </Section>
+      <Section id="section-2"> 
+        <SectionHeading>Programming languages</SectionHeading>
+        <p>I&rsquo;m quite a programming language geek! I may not be great at many of them, but I absolutely adore them. These are my top favorites:</p> 
+        <ul class="list-disc list-inside px-4 marker:text-skin-accent">
+          <li>TypeScript</li>
+          <li>Rust</li>
+          <li>Kotlin</li>
+          <li>Java</li>
+          <li>C++</li>
+        </ul>
+      </Section>
+      <Section id="section-3"> 
+        <SectionHeading>Podcasts & YouTube Channels</SectionHeading>
+        <p>I consume this content virtually every single day:</p> 
+        <ul class="list-disc list-inside px-4 marker:text-skin-accent">
+          <li>JavaScript Jabber</li>
+          <li>Syntax FM</li>
+          <li>Ryan Carniato&rsquo;s streams and VODs</li>
+          <li>CoRecursive Podcast</li>
+          <li>Kevin Powell&rsquo;s YouTube channel</li>
+        </ul>
+      </Section>
+    </div>
   </PageContainer>
 </BaseLayout>
