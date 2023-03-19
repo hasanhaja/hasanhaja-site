@@ -1,13 +1,16 @@
 ---
 import PageContainer from "../components/PageContainer.astro";
+import PageHeading from "../components/PageHeading.astro";
+import Section from "../components/Section.astro";
+import SectionHeading from "../components/SectionHeading.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 ---
 <BaseLayout title="Picks"> 
   <PageContainer>
-    <h1 class="text-skin-base text-4xl md:text-5xl font-bold mb-6 md:mb-8">My top picks</h1>
-    <section class="mb-8 md:mb-10 text-skin-base"> 
-      <h2 class="text-skin-base text-2xl md:text-3xl mb-3 md:mb-4">Frontend tools</h2>
+    <PageHeading>My top picks</PageHeading>
+    <Section> 
+      <SectionHeading>Frontend tools</SectionHeading>
       <p>React will always have a special place in my heart because it was my gateway into the frontend world (and it&rsquo;s still paying the bills, lol). It rightfully brought me out of a world where I was building web applications in Java, and today I happily put up with all the chaos that is the modern frontend. These are my favorite technologies right now:</p>
       <ul class="list-disc px-10">
         <li>Solid</li>
@@ -15,9 +18,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>Tailwindcss</li>
         <li>Plain ol&rsquo; HTML and CSS</li>
       </ul>
-    </section>
-    <section class="mb-8 md:mb-10 text-skin-base"> 
-      <h2 class="text-skin-base text-2xl md:text-3xl mb-3 md:mb-4">Fullstack, serverless & more</h2>
+    </Section>
+    <Section> 
+      <SectionHeading>Fullstack, serverless & more</SectionHeading>
       <p>I definitely got thrown in the deep end with these ideas and technologies, but it&rsquo;s really shaped my understand of fullstack web applications and serverless technologies. Even though I started with Next.js (straight from <code>create-react-app</code> without a clue in the world of what&rsquo;s even possible), it wasn&rsquo;t until Deno&rsquo;s Fresh and Astro that things really started clicking. This is pretty much the order in which I made that journey:</p> 
       <ul class="list-disc px-10">
         <li>Astro</li>
@@ -27,9 +30,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>AWS CDK</li>
         <li>Next.js</li>
       </ul>
-    </section>
-    <section class="mb-8 md:mb-10 text-skin-base"> 
-      <h2 class="text-skin-base text-2xl md:text-3xl mb-3 md:mb-4">Programming languages</h2>
+    </Section>
+    <Section> 
+      <SectionHeading>Programming languages</SectionHeading>
       <p>I&rsquo;m quite a programming language geek! I may not be great at many of them, but I absolutely adore them. These are my top favorites:</p> 
       <ul class="list-disc px-10">
         <li>TypeScript</li>
@@ -38,9 +41,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>Java</li>
         <li>C++</li>
       </ul>
-    </section>
-    <section class="mb-8 md:mb-10 text-skin-base"> 
-      <h2 class="text-skin-base text-2xl md:text-3xl mb-3 md:mb-4">Podcasts & YouTube Channels</h2>
+    </Section>
+    <Section> 
+      <SectionHeading>Podcasts & YouTube Channels</SectionHeading>
       <p>I consume this content virtually every single day:</p> 
       <ul class="list-disc px-10">
         <li>JavaScript Jabber</li>
@@ -49,6 +52,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>CoRecursive Podcast</li>
         <li>Kevin Powell&rsquo;s YouTube channel</li>
       </ul>
-    </section>
+    </Section>
   </PageContainer>
 </BaseLayout>
