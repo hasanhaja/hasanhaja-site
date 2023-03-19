@@ -13,7 +13,11 @@ body {
     --color-inverted: 232, 232, 232;
     --color-primary: 255, 136, 75;
     --color-secondary: 48, 71, 94;
+    --color-secondary-shadow: 74, 93, 117;
+    --color-secondary-inverted: 114, 138, 168;
     --color-section: 245, 230, 202;
+    --color-section-inverted: 191, 179, 154;
+    --color-section-shadow: 165, 152, 124;
     --color-accent: 245, 71, 72;
   }
 }

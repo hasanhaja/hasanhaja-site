@@ -1,13 +1,16 @@
 ---
 import PageContainer from "../components/PageContainer.astro";
+import PageHeading from "../components/PageHeading.astro";
+import Section from "../components/Section.astro";
+import SectionHeading from "../components/SectionHeading.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 ---
 <BaseLayout title="Gadgets">
   <PageContainer>
-    <h1 class="text-skin-base text-4xl md:text-5xl font-bold mb-6 md:mb-8">My gadgets</h1>
-    <section class="mb-8 md:mb-10 text-skin-base"> 
-      <h2 class="text-skin-base text-2xl md:text-3xl mb-3 md:mb-4">Mechanical keyboard</h2>
+    <PageHeading>My gadgets</PageHeading>
+    <Section> 
+      <SectionHeading>Mechanical keyboard</SectionHeading>
       <p>I&rsquo;ve been using a mechanical keyboard since 2015 and it&rsquo;s only in 2022 that I ventured into the rabbit hole that is custom mechanical keyboards. My current build is:</p>
       <ul class="list-disc px-10 pb-3 md:pb-4">
         <li>Glorious GMMK Pro</li>
@@ -16,9 +19,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>GPBT Ocean Blue keycaps</li>
       </ul>
       <p>I realize that this is pretty stock and I don&rsquo;t have a single modidification or custom part that Glorious doesn&rsquo;t sell, but I see this as my introduction into this world. I&rsquo;ve got my eye on Mode SixtyFive for my next build.</p>
-    </section>
-    <section class="mb-8 md:mb-10 text-skin-base"> 
-      <h2 class="text-skin-base text-2xl md:text-3xl mb-3 md:mb-4">Speedcube</h2>
+    </Section>
+    <Section> 
+      <SectionHeading>Speedcube</SectionHeading>
       <p>I have quite a few cubes and I really like them all. Learning the 4x4 and 5x5 stretched my brain but that was nothing compared to learning the Square-1. Right now, I&rsquo;m focusing on the 3x3 and working on my algorithms. I&rsquo;ve slowly been building up muscle memory for 2-look OLL and PLL. My main 3x3s at the moment are:</p>
       <ul class="list-disc px-10 pb-3 md:pb-4">
         <li>Tornado V3 M Pioneer</li>
@@ -26,6 +29,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>Super RS3 M 2022 Base</li>
       </ul>
       <p>I&rsquo;ve set these up with a combination of Weight 3, Gravitas, Silk and Mystic. These were the lubes I could get access to and since it was my first time using lubed cubes, I don&rsquo;t have much of a comparison point. I&rsquo;m trying to get my hands on DNM-37 and setting up one of cubes from scratch to see if that like that additional better.</p>
-    </section>
+    </Section>
   </PageContainer>
 </BaseLayout>
