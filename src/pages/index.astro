@@ -1,14 +1,15 @@
 ---
 import Hero from "../components/Hero.astro";
 import PageContainer from "../components/PageContainer.astro";
+import Section from "../components/Section.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
   <Hero />
   <PageContainer class="bg-skin-section rounded-md my-4">
-    <section class="text-skin-base py-6 mb-2">
-      <h1 class="text-4xl md:text-5xl font-bold pb-4">🤖 About me</h1>
+    <Section>
+      <h1 class="text-4xl text-skin-secondary underline decoration-4 decoration-skin-secondaryInverted md:text-5xl font-bold pb-4">🤖 About me</h1>
       <p class="pb-3">
         I'm a Software Engineer @{" "}
         <a
@@ -39,7 +40,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </p>
       <div class="mt-2 bg-skin-inverted rounded-md mb-2 max-w-lg mx-auto">
         <div class="flex">
-          <div class="bg-skin-accent rounded-l-md">
+          <div class="bg-skin-secondary rounded-l-md">
             <p class="text-3xl font-bold text-skin-inverted p-5 sm:p-7 sm:text-4xl">
               Social
             </p>
@@ -71,6 +72,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   </PageContainer>
 </BaseLayout>

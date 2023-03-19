@@ -16,6 +16,7 @@ module.exports = {
           base: withOpacity("--color-base"),
           primary: withOpacity("--color-primary"),
           secondary: withOpacity("--color-secondary"),
+          secondaryInverted: withOpacity("--color-secondary-inverted"),
           inverted: withOpacity("--color-inverted"),
           accent: withOpacity("--color-accent"),
         },
@@ -24,9 +25,16 @@ module.exports = {
         skin: {
           primary: withOpacity("--color-primary"),
           secondary: withOpacity("--color-secondary"),
+          secondaryInverted: withOpacity("--color-secondary-inverted"),
           inverted: withOpacity("--color-inverted"),
           section: withOpacity("--color-section"),
+          sectionInverted: withOpacity("--color-section-inverted"),
           accent: withOpacity("--color-accent"),
+        },
+      },
+      boxShadowColor: {
+        skin: {
+          section: withOpacity("--color-section-shadow"),
         },
       },
       fill: {
@@ -34,6 +42,7 @@ module.exports = {
           base: withOpacity("--color-base"),
           primary: withOpacity("--color-primary"),
           secondary: withOpacity("--color-secondary"),
+          secondaryInverted: withOpacity("--color-secondary-inverted"),
           inverted: withOpacity("--color-inverted"),
           section: withOpacity("--color-section"),
           accent: withOpacity("--color-accent"),
@@ -43,6 +52,13 @@ module.exports = {
         skin: {
           base: withOpacity("--color-base"),
           inverted: withOpacity("--color-inverted"),
+          accent: withOpacity("--color-accent"),
+        },
+      },
+      textDecorationColor: {
+        skin: {
+          secondary: withOpacity("--color-secondary"),
+          secondaryInverted: withOpacity("--color-secondary-inverted"),
           accent: withOpacity("--color-accent"),
         },
       },
