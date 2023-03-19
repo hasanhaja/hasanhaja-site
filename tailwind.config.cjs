@@ -62,6 +62,11 @@ module.exports = {
           accent: withOpacity("--color-accent"),
         },
       },
+      divideColor: {
+        skin: {
+          base: withOpacity("--color-section-shadow"),
+        },
+      },
     },
 	},
 	plugins: [],

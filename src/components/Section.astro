@@ -1,6 +1,10 @@
 ---
+type Props = {
+  id?: string;
+};
 
+const { id } = Astro.props;
 ---
-<section class="mb-8 md:mb-10 px-4 py-5 md:px-6 md:py-8 bg-skin-sectionInverted shadow-lg shadow-skin-section rounded-lg text-skin-base"> 
+<section id={id} class="pt-8 pb-12 md:pt-10 md:pb-14 md:px-6 text-skin-base"> 
   <slot />
 </section>
